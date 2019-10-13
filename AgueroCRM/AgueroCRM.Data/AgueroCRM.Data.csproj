@@ -47,9 +47,11 @@
     <Compile Include="Models\CustomerContract.cs" />
     <Compile Include="Models\PotentialCustomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IApplication.cs" />
+    <Compile Include="Service\ICustomer.cs" />
+    <Compile Include="Service\ICustomerContract.cs" />
+    <Compile Include="Service\IPotentialCustomer.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Service\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
