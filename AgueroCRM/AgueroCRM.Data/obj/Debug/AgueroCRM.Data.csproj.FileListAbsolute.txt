@@ -1,6 +1,11 @@
 C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\AgueroCRM.Data.dll
 C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\AgueroCRM.Data.pdb
 C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\obj\Debug\AgueroCRM.Data.csprojAssemblyReference.cache
-C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\obj\Debug\AgueroCRM.Data.csproj.CoreCompileInputs.cache
 C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\obj\Debug\AgueroCRM.Data.dll
 C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\obj\Debug\AgueroCRM.Data.pdb
+C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\AgueroCRM.Data.dll.config
+C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\EntityFramework.dll
+C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\EntityFramework.xml
+C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Dev\aguerocrmmvc\AgueroCRM\AgueroCRM.Data\obj\Debug\AgueroCRM.Data.csproj.CopyComplete

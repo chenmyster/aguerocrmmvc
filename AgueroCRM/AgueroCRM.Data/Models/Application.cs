@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgueroCRM.Data
+namespace AgueroCRM.Data.Models
 {
     public class Application
     {
