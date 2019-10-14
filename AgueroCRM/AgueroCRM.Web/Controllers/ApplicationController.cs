@@ -11,10 +11,12 @@ namespace AgueroCRM.Web.Controllers
     public class ApplicationController : Controller
     {
         private readonly IApplicationData db;
+        private readonly ICustomerData customerDb;
 
-        public ApplicationController(IApplicationData db)
+        public ApplicationController(IApplicationData db, ICustomerData customerDb)
         {
             this.db = db;
+            this.customerDb = customerDb;
         }
         // GET: Applications
         [HttpGet]
@@ -38,7 +40,11 @@ namespace AgueroCRM.Web.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            var model = new Application
+            {
+                Customers = customerDb.GetAll()
+            };
+            return View(model);
         }
 
         [HttpPost]

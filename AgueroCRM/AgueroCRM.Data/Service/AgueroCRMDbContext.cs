@@ -17,5 +17,6 @@ namespace AgueroCRM.Data.Service
         public DbSet<CustomerContract> CustomerContract { get; set; }
 
         public DbSet<Application> Application { get; set; }
+
     }
 }

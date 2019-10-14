@@ -1,5 +1,7 @@
-﻿using System;
+﻿using AgueroCRM.Data.Service;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -18,6 +20,7 @@ namespace AgueroCRM.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             ContainerConfig.RegisterContainer(GlobalConfiguration.Configuration);
+            //Database.SetInitializer<AgueroCRMDbContext>(new DropCreateDatabaseIfModelChanges<AgueroCRMDbContext>());
         }
     }
 }
