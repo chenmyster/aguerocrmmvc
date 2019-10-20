@@ -1,0 +1,111 @@
+﻿@model IEnumerable<AgueroCRM.Data.Models.Application>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>申请</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.University)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Programme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Agency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReferenceStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChoiceType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReminderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReminderNotes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfferConditions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfferDeadline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoginId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.University)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Programme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agency)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReferenceStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChoiceType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReminderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReminderNotes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfferConditions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfferDeadline)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoginId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

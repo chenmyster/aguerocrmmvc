@@ -26,7 +26,7 @@ namespace AgueroCRM.Data.Models
         [Display(Name = "成绩")]
         public string Grade { get; set; }
 
-        [Display(Name = "科目")]
+        [Display(Name = "专业")]
         public string Programme { get; set; }
 
         [Display(Name = "微信")]

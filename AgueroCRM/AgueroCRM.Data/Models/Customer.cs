@@ -27,7 +27,7 @@ namespace AgueroCRM.Data.Models
         [Display(Name = "成绩")]
         public string Grade { get; set; }
 
-        [Display(Name = "科目")]
+        [Display(Name = "专业")]
         public string Programme { get; set; }
 
         [Display(Name = "微信")]
@@ -48,16 +48,17 @@ namespace AgueroCRM.Data.Models
         [Display(Name = "介绍人")]
         public string Referal { get; set; }
 
-        [Required, DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
-        [DataType(DataType.Date)]
+        [Required]
+        //[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        //[DataType(DataType.Date)]
         [Display(Name = "提醒日期")]
         public DateTime ReminderDate { get; set; }
 
         [Display(Name = "提醒内容")]
         public string ReminderNotes { get; set; }
 
-        [Required, DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
-        [DataType(DataType.Date)]
+        //[Required, DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
+        //[DataType(DataType.Date)]
         [Display(Name = "生日")]
         public DateTime DateOfBirth { get; set; }
 

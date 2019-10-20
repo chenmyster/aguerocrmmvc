@@ -38,7 +38,9 @@ namespace AgueroCRM.Web.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            CustomerContract model = new CustomerContract();
+            model.StartDate = DateTime.Today;
+            return View(model);
         }
 
         [HttpPost]

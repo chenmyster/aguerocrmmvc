@@ -1,0 +1,123 @@
+﻿@model IEnumerable<AgueroCRM.Data.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>客户</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.University)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Programme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WechatId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonalEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MarketingSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Referal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReminderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReminderNotes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HomeAddress)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.University)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Programme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WechatId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonalEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MarketingSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Referal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReminderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReminderNotes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HomeAddress)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

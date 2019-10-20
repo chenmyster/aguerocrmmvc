@@ -1,0 +1,138 @@
+﻿@model AgueroCRM.Data.Models.PotentialCustomer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PotentialCustomer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.University)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.University)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Programme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Programme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WechatId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WechatId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonalEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonalEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarketingSource)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarketingSource)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Referal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Referal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReminderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReminderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReminderNotes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReminderNotes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomeAddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

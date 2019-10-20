@@ -25,7 +25,7 @@ namespace AgueroCRM.Web.Controllers
             var model = db.GetAll();
             return View(model);
         }
-
+        
         [HttpGet]
         public ActionResult Details(int id)
         {
@@ -44,6 +44,8 @@ namespace AgueroCRM.Web.Controllers
             {
                 Customers = customerDb.GetAll()
             };
+            model.StartDate = DateTime.Today;
+            model.PaymentDate = DateTime.Today;
             return View(model);
         }
 
